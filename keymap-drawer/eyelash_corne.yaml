@@ -28,7 +28,7 @@ layers:
   - {t: K, h: '$$mdi:apple-keyboard-control$$'}
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
   - {t: '''', h: '$$mdi:apple-keyboard-command$$', s: '"'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:alpha-w-box$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Z
   - X
