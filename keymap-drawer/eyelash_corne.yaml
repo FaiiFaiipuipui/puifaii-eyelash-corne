@@ -343,6 +343,3 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {type: held}
-combos:
-- p: [1, 15, 29]
-  k: '&soft_off'
