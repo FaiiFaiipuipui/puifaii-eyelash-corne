@@ -14,7 +14,7 @@ layers:
   - O
   - P
   - AL CALCULATOR
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - CMENU
   - {t: A, h: '$$mdi:apple-keyboard-command$$'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: D, h: '$$mdi:apple-keyboard-control$$'}
