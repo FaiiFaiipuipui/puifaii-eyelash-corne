@@ -1,5 +1,5 @@
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1800  // 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 120   // 10
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 2100
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 180
 
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
@@ -14,14 +14,14 @@
 &msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
 
 &msc {
-    acceleration-exponent = <0>;      // 0
-    time-to-max-speed-ms = <100>;       // 300
+    acceleration-exponent = <2>;      // 0
+    time-to-max-speed-ms = <500>;       // 300
     delay-ms = <0>;                   // 0
 };
 
 &mmv {
-    time-to-max-speed-ms = <750>;
-    acceleration-exponent = <1>;
+    time-to-max-speed-ms = <1000>;
+    acceleration-exponent = <2>;
     trigger-period-ms = <16>;
 };
 
@@ -33,7 +33,7 @@
 };
 
 &lt {
-    tapping-term-ms = <200>;
+    tapping-term-ms = <170>;
     quick-tap-ms = <0>;
 };
 
