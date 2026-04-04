@@ -122,9 +122,9 @@
         arrow {
             display-name = "Arrow";
             bindings = <
-&none  &none     &none     &none      &none       &none                  &none         &kp K_UNDO      &kp PRINTSCREEN  &kp INSERT    &kp K_REDO  &none  &none
-&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &none           &none  &none  &none  &kp LEFT_ARROW  &kp DOWN_ARROW   &kp UP_ARROW  &kp RIGHT   &none  &none
-&none  &none     &none     &none      &none       &none  &none           &none         &kp HOME        &kp PAGE_DOWN    &kp PAGE_UP   &kp END     &none  &none
+&none  &none     &none     &none      &none       &none                  &none         &kp K_UNDO      &kp PRINTSCREEN  &kp LG(PRINTSCREEN)  &kp K_REDO  &none  &none
+&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &none           &none  &none  &none  &kp LEFT_ARROW  &kp DOWN_ARROW   &kp UP_ARROW         &kp RIGHT   &none  &none
+&none  &none     &none     &none      &none       &none  &none           &none         &kp HOME        &kp PAGE_DOWN    &kp PAGE_UP          &kp END     &none  &none
                            &none      &trans      &none                                &kp ENTER       &kp BACKSPACE    &kp DELETE
             >;
 
