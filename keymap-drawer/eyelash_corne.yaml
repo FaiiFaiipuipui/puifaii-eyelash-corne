@@ -10,8 +10,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Y
   - U
-  - I
-  - O
+  - {t: I, h: '['}
+  - {t: O, h: ']'}
   - P
   - AL CALCULATOR
   - $$mdi:alpha-w-box$$
