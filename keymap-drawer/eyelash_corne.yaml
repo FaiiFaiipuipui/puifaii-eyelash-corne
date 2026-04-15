@@ -14,7 +14,7 @@ layers:
   - O
   - P
   - AL CALCULATOR
-  - CMENU
+  - $$mdi:alpha-w-box$$
   - {t: A, h: '$$mdi:apple-keyboard-command$$'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: D, h: '$$mdi:apple-keyboard-control$$'}
@@ -27,8 +27,8 @@ layers:
   - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: K, h: '$$mdi:apple-keyboard-control$$'}
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: '''', h: RIGHT GUI, s: '"'}
-  - $$mdi:alpha-w-box$$
+  - {t: ;, h: RIGHT GUI, s: ':'}
+  - {t: '''', s: '"'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Z
   - X
