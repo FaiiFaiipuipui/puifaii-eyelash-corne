@@ -40,8 +40,8 @@ layers:
   - N
   - M
   - {t: ',', s: <}
-  - {t: ., s: '>'}
-  - {t: /, h: '$$mdi:apple-keyboard-option$$', s: '?'}
+  - {t: ., h: Gui+Ctl+F3}
+  - {t: /, h: Gui+Ctl+F4, s: '?'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:keyboard-esc$$', h: peripheral}
   - {t: '$$mdi:keyboard-space$$', h: arrow}
