@@ -38,7 +38,7 @@
     quick-tap-ms = <0>;
 };
 
-&caps_word { continue-list = <UNDERSCORE MINUS BACKSPACE DELETE SEMI SEMICOLON COLON>; };
+&caps_word { continue-list = <UNDERSCORE MINUS BACKSPACE DELETE SEMI>; };
 
 /* ── Key position groups for positional hold-tap ─────────────
  *
