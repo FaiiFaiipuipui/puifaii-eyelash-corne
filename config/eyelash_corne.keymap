@@ -112,7 +112,7 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&none       &kp Q            &kp W            &kp E         &kp R              &kp T                      &none         &kp Y        &kp U               &kp I         &kp O                  &kp P                 &kp C_AL_CALCULATOR
+&none       &kp Q            &kp W            &kp E         &kp R              &kp T                      &none         &kp Y        &kp U               &kp I         &kp O                  &kp P                 &none
 &caps_word  &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LCTRL D  &hml LEFT_SHIFT F  &kp G               &none  &none  &none  &kp H        &hmr RIGHT_SHIFT J  &hmr RCTRL K  &hmr LALT L            &hmr RIGHT_GUI SEMI   &kp SQT
 &none       &kp Z            &kp X            &kp C         &hml RALT V        &kp B      &none           &none         &kp N        &hmr RALT M         &kp COMMA     &mt LG(LC(F3)) PERIOD  &mt LG(LC(F4)) SLASH  &none
                                               &lt 3 ESCAPE  &lt 1 SPACE        &lt 2 TAB                                &lt 5 ENTER  &lt 4 BACKSPACE     &lt 6 DELETE
@@ -159,10 +159,10 @@
         number {
             display-name = "NUMBER";
             bindings = <
-&none  &kp LEFT_BRACKET  &kp N7        &kp N8        &kp N9        &kp RIGHT_BRACKET                  &none         &none  &none           &none      &none         &none         &none
-&none  &kp SEMI          &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL                   &none  &none  &none  &none  &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &none
-&none  &kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH      &none           &none         &none  &kp RALT        &none      &none         &none         &none
-                                       &kp KP_DOT    &kp NUMBER_0  &kp MINUS                                        &none  &trans          &none
+&none                &kp LEFT_BRACKET  &kp N7        &kp N8        &kp N9        &kp RIGHT_BRACKET                  &none         &none  &none           &none      &none         &none         &none
+&kp C_AL_CALCULATOR  &kp SEMI          &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL                   &none  &none  &none  &none  &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &none
+&none                &kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH      &none           &none         &none  &kp RALT        &none      &none         &none         &none
+                                                     &kp KP_DOT    &kp NUMBER_0  &kp MINUS                                        &none  &trans          &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
