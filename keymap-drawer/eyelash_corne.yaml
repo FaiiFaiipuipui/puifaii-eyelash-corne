@@ -13,7 +13,7 @@ layers:
   - I
   - O
   - P
-  - AL CALCULATOR
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:alpha-w-box$$
   - {t: A, h: '$$mdi:apple-keyboard-command$$'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
@@ -210,7 +210,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - AL CALCULATOR
   - {t: ;, s: ':'}
   - '4'
   - {t: '5', s: '%'}
