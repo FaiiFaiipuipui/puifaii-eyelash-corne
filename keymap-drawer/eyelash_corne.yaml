@@ -193,8 +193,8 @@ layers:
   - {type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - PLAY PAUSE
+  - PLAY
+  - PAUSE
   - $$mdi:volume-off$$
   NUMBER:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
