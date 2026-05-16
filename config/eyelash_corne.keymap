@@ -159,10 +159,10 @@
         number {
             display-name = "NUMBER";
             bindings = <
-&none                &kp LEFT_BRACKET  &kp N7        &kp N8        &kp N9        &kp RIGHT_BRACKET                  &none         &none  &none           &none      &none         &none         &none
-&kp C_AL_CALCULATOR  &kp SEMI          &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL                   &none  &none  &none  &none  &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &none
-&none                &kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH      &none           &none         &none  &kp RALT        &none      &none         &none         &none
-                                                     &kp KP_DOT    &kp NUMBER_0  &kp MINUS                                        &none  &trans          &none
+&none                &kp LEFT_BRACKET  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp RIGHT_BRACKET                  &none         &none  &none           &none      &none         &none         &none
+&kp C_AL_CALCULATOR  &kp SEMI          &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp EQUAL                   &none  &none  &none  &none  &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &none
+&none                &kp GRAVE         &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp BACKSLASH      &none           &none         &none  &kp RALT        &none      &none         &none         &none
+                                                        &kp KP_DOT       &kp KP_NUMBER_0  &kp KP_SUBTRACT                                  &none  &trans          &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -170,8 +170,8 @@
 
         symbol {
             bindings = <
-&none  &kp LEFT_BRACE  &kp AMPERSAND    &kp ASTRK             &none                  &kp RIGHT_BRACE                  &none         &none   &kp RIGHT_BRACE    &kp LEFT_BRACE    &none         &none         &none
-&none  &kp COLON       &kp DOLLAR       &kp PERCENT           &kp CARET              &kp PLUS                  &none  &none  &none  &none   &kp LEFT_SHIFT     &kp LCTRL         &kp LEFT_ALT  &kp LEFT_GUI  &none
+&none  &kp LEFT_BRACE  &kp AMPERSAND    &kp KP_ASTERISK       &none                  &kp RIGHT_BRACE                  &none         &none   &kp RIGHT_BRACE    &kp LEFT_BRACE    &none         &none         &none
+&none  &kp COLON       &kp DOLLAR       &kp PERCENT           &kp CARET              &kp KP_PLUS               &none  &none  &none  &none   &kp LEFT_SHIFT     &kp LCTRL         &kp LEFT_ALT  &kp LEFT_GUI  &none
 &none  &kp TILDE       &kp EXCLAMATION  &kp AT                &kp HASH               &kp PIPE         &none           &none         &none   &kp RIGHT_BRACKET  &kp LEFT_BRACKET  &none         &none         &none
                                         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDER                                      &trans  &none              &none
             >;
