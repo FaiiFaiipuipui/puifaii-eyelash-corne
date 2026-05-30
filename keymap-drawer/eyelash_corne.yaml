@@ -1,44 +1,44 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
-  QWERTY:
+  Colemak DH Mod Miryoku:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Q
   - W
-  - E
-  - R
-  - T
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Y
-  - U
-  - I
-  - O
+  - F
   - P
+  - B
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - J
+  - L
+  - U
+  - Y
+  - {t: '''', s: '"'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:alpha-w-box$$
-  - {t: A, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: D, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: A, h: LGUI}
+  - {t: R, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: T, h: '$$mdi:apple-keyboard-shift$$'}
   - G
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - H
-  - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: K, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: ;, h: RIGHT GUI, s: ':'}
-  - {t: '''', s: '"'}
+  - M
+  - {t: N, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: E, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: I, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: O, h: RGUI}
+  - '&macro_to_thai'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Z
   - X
   - C
-  - {t: V, h: '$$mdi:apple-keyboard-option$$'}
-  - B
+  - {t: D, h: '$$mdi:apple-keyboard-option$$'}
+  - V
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - N
-  - {t: M, h: '$$mdi:apple-keyboard-option$$'}
+  - K
+  - {t: H, h: '$$mdi:apple-keyboard-option$$'}
   - {t: ',', s: <}
   - {t: ., h: Gui+Ctl+F3}
   - {t: /, h: Gui+Ctl+F4, s: '?'}
@@ -49,6 +49,153 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: symbol}
   - {t: '$$mdi:backspace$$', h: NUMBER}
   - {t: '$$mdi:backspace-reverse-outline$$', h: func}
+  KhonChai Norm:
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - .
+  - {t: '9', s: (}
+  - S
+  - {t: ']', s: '}'}
+  - L
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - X
+  - Y
+  - D
+  - B
+  - {t: '[', s: '{'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:alpha-w-box$$
+  - {t: '''', h: '&macro_lang_lgui LGUI', s: '"'}
+  - {t: G, h: '&macro_lang_lalt LALT'}
+  - {t: I, h: '&macro_lang_lctrl LCTRL'}
+  - {t: O, h: KhonChai Shift}
+  - {t: ',', s: <}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - V
+  - {t: K, h: KhonChai Shift}
+  - {t: J, h: '&macro_lang_rctrl RCTRL'}
+  - {t: H, h: '&macro_lang_ralt LALT'}
+  - {t: ;, h: '&macro_lang_rgui RGUI', s: ':'}
+  - '&macro_to_eng'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '6', s: ^}
+  - W
+  - M
+  - {t: P, h: KhonChai Right Alt}
+  - {t: '0', s: )}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '8', s: '*'}
+  - {t: U, h: KhonChai Right Alt}
+  - F
+  - {t: T, h: Gui+Ctl+F3}
+  - {t: Sft+6, h: Gui+Ctl+F4, s: Sft+^}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:keyboard-esc$$', h: peripheral}
+  - {t: '$$mdi:keyboard-space$$', h: arrow}
+  - {t: '$$mdi:keyboard-tab$$', h: mouse}
+  - {t: '$$mdi:keyboard-return$$', h: '&macro_lang_layer_8 8'}
+  - {t: '$$mdi:backspace$$', h: '&macro_lang_layer_7 7'}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: func}
+  KhonChai Shift:
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: 'Sft+,', s: Sft+<}
+  - Sft+D
+  - {t: Sft+;, s: 'Sft+:'}
+  - Sft+P
+  - A
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Sft+C
+  - N
+  - Sft+T
+  - {t: 'Sft+[', s: 'Sft+{'}
+  - Sft+E
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:alpha-w-box$$
+  - Sft+K
+  - {t: '5', s: '%'}
+  - C
+  - {t: '=', s: +, type: held}
+  - R
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Z
+  - {t: E, type: held alternate}
+  - {t: '-', s: _}
+  - Sft+F
+  - {t: '4', s: $}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Sft+A
+  - {t: /, s: '?'}
+  - Q
+  - Sft+I
+  - Sft+U
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Sft+J
+  - Sft+N
+  - Sft+L
+  - Sft+V
+  - Sft+H
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:keyboard-esc$$
+  - $$mdi:keyboard-space$$
+  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:backspace-reverse-outline$$
+  KhonChai Right Alt:
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: Sft+/, s: 'Sft+?'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Sft+S
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '7', s: '&'}
+  - Sft+B
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '''', s: '"'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:alpha-w-box$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Sft+G
+  - {t: Sft+., s: Sft+>}
+  - Sft+O
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: Sft+7, s: Sft+&}
+  - {t: \, s: '|'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Sft+Y
+  - Sft+R
+  - {t: '1', s: '!', type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: Sft+\, s: Sft+|, type: held alternate}
+  - {t: ',', s: <}
+  - .
+  - {t: /, s: '?'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:keyboard-esc$$
+  - $$mdi:keyboard-space$$
+  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:backspace-reverse-outline$$
   arrow:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -223,7 +370,7 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-command$$
+  - LGUI
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '`', s: '~'}
@@ -272,7 +419,7 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-command$$
+  - LGUI
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '~'
@@ -321,7 +468,7 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-command$$
+  - LGUI
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - F10
