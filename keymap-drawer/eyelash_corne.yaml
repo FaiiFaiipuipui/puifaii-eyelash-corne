@@ -159,7 +159,7 @@ layers:
   - {t: '7', s: '&'}
   - Sft+B
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '''', s: '"'}
+  - Sft+W
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:alpha-w-box$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -186,9 +186,9 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: Sft+\, s: Sft+|, type: held alternate}
-  - {t: ',', s: <}
-  - .
-  - {t: /, s: '?'}
+  - {t: 'Sft+]', s: 'Sft+}'}
+  - {t: Sft+', s: Sft+"}
+  - '2'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:keyboard-esc$$
   - $$mdi:keyboard-space$$
