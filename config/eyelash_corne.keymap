@@ -504,7 +504,7 @@
             bindings = <
 &none       &kp Q            &kp W            &kp F         &kp P              &kp B                      &none         &kp J        &kp L               &kp U         &kp Y                  &kp SQT               &none
 &caps_word  &hml LGUI     A  &hml LALT     R  &hml LCTRL S  &hml LSHIFT     T  &kp G               &none  &none  &none  &kp M        &hmr RSHIFT      N  &hmr RCTRL E  &hmr LALT I            &hmr RGUI      O      &macro_to_thai
-&none       &kp Z            &kp X            &kp C         &hml RALT D        &kp V      &none           &none         &kp K        &hmr RALT H         &kp COMMA     &mt LG(LC(F3)) PERIOD  &mt LG(LC(F4)) SLASH  &none
+&none       &kp Z            &kp X            &kp C         &hml RALT D        &kp V      &none           &none         &kp K        &hmr RALT H         &kp COMMA     &kp PERIOD  &kp SLASH  &none
                                               &lt 6 ESCAPE  &lt 4 SPACE        &lt 5 TAB                                &lt 8 ENTER  &lt 7 BACKSPACE     &lt 9 DELETE
             >;
 
