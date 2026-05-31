@@ -60,7 +60,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <280>;
+            tapping-term-ms = <270>;
             quick-tap-ms = <125>;
             require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
@@ -73,7 +73,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <280>;
+            tapping-term-ms = <270>;
             quick-tap-ms = <125>;
             require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
@@ -261,7 +261,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <280>;
+            tapping-term-ms = <270>;
             quick-tap-ms = <125>;
             require-prior-idle-ms = <125>;
             bindings = <&macro_lang_lgui>, <&kp>;
@@ -273,7 +273,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <280>;
+            tapping-term-ms = <270>;
             quick-tap-ms = <125>;
             require-prior-idle-ms = <125>;
             bindings = <&macro_lang_lalt>, <&kp>;
@@ -285,7 +285,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <280>;
+            tapping-term-ms = <270>;
             quick-tap-ms = <125>;
             require-prior-idle-ms = <125>;
             bindings = <&macro_lang_lctrl>, <&kp>;
@@ -297,7 +297,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <280>;
+            tapping-term-ms = <270>;
             quick-tap-ms = <125>;
             require-prior-idle-ms = <125>;
             bindings = <&macro_lang_rctrl>, <&kp>;
@@ -309,7 +309,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <280>;
+            tapping-term-ms = <270>;
             quick-tap-ms = <125>;
             require-prior-idle-ms = <125>;
             bindings = <&macro_lang_ralt>, <&kp>;
@@ -321,7 +321,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <280>;
+            tapping-term-ms = <270>;
             quick-tap-ms = <125>;
             require-prior-idle-ms = <125>;
             bindings = <&macro_lang_rgui>, <&kp>;
@@ -398,7 +398,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <170>;
+            tapping-term-ms = <140>;
             quick-tap-ms = <0>;
             bindings = <&macro_lang_layer_8>, <&kp>;
         };
@@ -407,7 +407,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <170>;
+            tapping-term-ms = <140>;
             quick-tap-ms = <0>;
             bindings = <&macro_lang_layer_7>, <&kp>;
         };
@@ -416,7 +416,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <280>;
+            tapping-term-ms = <270>;
             quick-tap-ms = <125>;
             require-prior-idle-ms = <125>;
             bindings = <&mo>, <&kp>;
@@ -429,7 +429,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <280>;
+            tapping-term-ms = <270>;
             quick-tap-ms = <125>;
             require-prior-idle-ms = <125>;
             bindings = <&mo>, <&kp>;
