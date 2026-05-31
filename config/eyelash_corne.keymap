@@ -753,5 +753,7 @@
             >;
 
             label = "test_lang_chg";
+        };
     };
 };
+
