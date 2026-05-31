@@ -483,7 +483,7 @@
                 , <&macro_release &kp LALT>
                 , <&macro_wait_time 3>
                 ;
-        }
+        };
 
         test_macro_lang_chg_47: test_macro_lang_chg_47 {
             compatible = "zmk,behavior-macro";
@@ -496,7 +496,7 @@
                 , <&macro_release &kp LALT>
                 , <&macro_wait_time 3>
                 ;
-        }
+        };
 
         test_macro_lang_chg_45: test_macro_lang_chg_45 {
             compatible = "zmk,behavior-macro";
@@ -509,7 +509,7 @@
                 , <&macro_release &kp LALT>
                 , <&macro_wait_time 3>
                 ;
-        }
+        };
 
         test_macro_lang_chg_43: test_macro_lang_chg_43 {
             compatible = "zmk,behavior-macro";
@@ -522,7 +522,7 @@
                 , <&macro_release &kp LALT>
                 , <&macro_wait_time 3>
                 ;
-        }
+        };
 
         test_macro_lang_chg_40: test_macro_lang_chg_40 {
             compatible = "zmk,behavior-macro";
@@ -535,7 +535,7 @@
                 , <&macro_release &kp LALT>
                 , <&macro_wait_time 3>
                 ;
-        }
+        };
 
         test_macro_lang_chg_37: test_macro_lang_chg_37 {
             compatible = "zmk,behavior-macro";
@@ -548,7 +548,7 @@
                 , <&macro_release &kp LALT>
                 , <&macro_wait_time 3>
                 ;
-        }
+        };
 
         test_macro_lang_chg_35: test_macro_lang_chg_35 {
             compatible = "zmk,behavior-macro";
@@ -561,7 +561,7 @@
                 , <&macro_release &kp LALT>
                 , <&macro_wait_time 3>
                 ;
-        }
+        };
 
         test_macro_lang_chg_33: test_macro_lang_chg_33 {
             compatible = "zmk,behavior-macro";
@@ -574,7 +574,7 @@
                 , <&macro_release &kp LALT>
                 , <&macro_wait_time 3>
                 ;
-        }
+        };
 
         test_macro_lang_chg_30: test_macro_lang_chg_30 {
             compatible = "zmk,behavior-macro";
@@ -587,7 +587,7 @@
                 , <&macro_release &kp LALT>
                 , <&macro_wait_time 3>
                 ;
-        }
+        };
 
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
