@@ -470,6 +470,124 @@
                 ;
         };
 
+        /** TEST WAIT MS **/
+
+        test_macro_lang_chg_50: test_macro_lang_chg_50 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <50>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp LSHIFT>
+                , <&macro_release &kp LALT>
+                , <&macro_wait_time 3>
+                ;
+        }
+
+        test_macro_lang_chg_47: test_macro_lang_chg_47 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <47>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp LSHIFT>
+                , <&macro_release &kp LALT>
+                , <&macro_wait_time 3>
+                ;
+        }
+
+        test_macro_lang_chg_45: test_macro_lang_chg_45 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <45>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp LSHIFT>
+                , <&macro_release &kp LALT>
+                , <&macro_wait_time 3>
+                ;
+        }
+
+        test_macro_lang_chg_43: test_macro_lang_chg_43 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <43>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp LSHIFT>
+                , <&macro_release &kp LALT>
+                , <&macro_wait_time 3>
+                ;
+        }
+
+        test_macro_lang_chg_40: test_macro_lang_chg_40 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <40>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp LSHIFT>
+                , <&macro_release &kp LALT>
+                , <&macro_wait_time 3>
+                ;
+        }
+
+        test_macro_lang_chg_37: test_macro_lang_chg_37 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <37>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp LSHIFT>
+                , <&macro_release &kp LALT>
+                , <&macro_wait_time 3>
+                ;
+        }
+
+        test_macro_lang_chg_35: test_macro_lang_chg_35 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <35>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp LSHIFT>
+                , <&macro_release &kp LALT>
+                , <&macro_wait_time 3>
+                ;
+        }
+
+        test_macro_lang_chg_33: test_macro_lang_chg_33 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <33>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp LSHIFT>
+                , <&macro_release &kp LALT>
+                , <&macro_wait_time 3>
+                ;
+        }
+
+        test_macro_lang_chg_30: test_macro_lang_chg_30 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <30>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp LSHIFT>
+                , <&macro_release &kp LALT>
+                , <&macro_wait_time 3>
+                ;
+        }
 
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
@@ -504,7 +622,7 @@
             bindings = <
 &none       &kp Q            &kp W            &kp F         &kp P              &kp B                      &none         &kp J        &kp L               &kp U         &kp Y                  &kp SQT               &none
 &caps_word  &hml LGUI     A  &hml LALT     R  &hml LCTRL S  &hml LSHIFT     T  &kp G               &none  &none  &none  &kp M        &hmr RSHIFT      N  &hmr RCTRL E  &hmr LALT I            &hmr RGUI      O      &macro_to_thai
-&none       &kp Z            &kp X            &kp C         &hml RALT D        &kp V      &none           &none         &kp K        &hmr RALT H         &kp COMMA     &kp PERIOD  &kp SLASH  &none
+&to 10       &kp Z            &kp X            &kp C         &hml RALT D        &kp V      &none           &none         &kp K        &hmr RALT H         &kp COMMA     &kp PERIOD  &kp SLASH  &none
                                               &lt 6 ESCAPE  &lt 4 SPACE        &lt 5 TAB                                &lt 8 ENTER  &lt 7 BACKSPACE     &lt 9 DELETE
             >;
 
@@ -624,5 +742,16 @@
 
             label = "func";
         };
+
+        // layer 10
+        test_lang_chg {
+            bindings = <
+&none &none &test_macro_lang_chg_45  &test_macro_lang_chg_47  &test_macro_lang_chg_50      &none                           &none         &none  &none           &none      &none         &none         &none
+&none &none &test_macro_lang_chg_37  &test_macro_lang_chg_40  &test_macro_lang_chg_43      &none           &none  &none  &none  &none  &kp LSHIFT      &kp LCTRL  &kp LALT      &kp LGUI      &none
+&to 0 &none &test_macro_lang_chg_30  &test_macro_lang_chg_33  &test_macro_lang_chg_35      &none           &none           &none         &none  &none           &none      &none         &none         &none
+                        &kp ESCAPE  &kp SPACE  &kp TAB                                       &none  &none           &trans
+            >;
+
+            label = "test_lang_chg";
     };
 };
