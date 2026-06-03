@@ -97,92 +97,109 @@
          * - OS language toggle = Alt + Shift
          * ─────────────────────────────────────────────────────────────
          */
-        
+
         macro_lang_lgui: macro_lang_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings
-                = <&macro_tap &to 0>
-                , <&macro_press &kp LGUI>
-                , <&macro_pause_for_release>
-                , <&macro_release &kp LGUI>
-                , <&macro_tap &to 1>
-                ;
+            bindings =
+                <&macro_tap>,
+                <&to 0>,
+                <&macro_press>,
+                <&kp LGUI>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp LGUI>,
+                <&macro_tap>,
+                <&to 1>;
         };
-        
+
         macro_lang_lalt: macro_lang_lalt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings
-                = <&macro_tap &to 0>
-                , <&macro_press &kp LALT>
-                , <&macro_pause_for_release>
-                , <&macro_release &kp LALT>
-                , <&macro_tap &to 1>
-                ;
+            bindings =
+                <&macro_tap>,
+                <&to 0>,
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&to 1>;
         };
-        
+
         macro_lang_lctrl: macro_lang_lctrl {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings
-                = <&macro_tap &to 0>
-                , <&macro_press &kp LCTRL>
-                , <&macro_pause_for_release>
-                , <&macro_release &kp LCTRL>
-                , <&macro_tap &to 1>
-                ;
+            bindings =
+                <&macro_tap>,
+                <&to 0>,
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&to 1>;
         };
-        
+
         macro_lang_rctrl: macro_lang_rctrl {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings
-                = <&macro_tap &to 0>
-                , <&macro_press &kp RCTRL>
-                , <&macro_pause_for_release>
-                , <&macro_release &kp RCTRL>
-                , <&macro_tap &to 1>
-                ;
+            bindings =
+                <&macro_tap>,
+                <&to 0>,
+                <&macro_press>,
+                <&kp RCTRL>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp RCTRL>,
+                <&macro_tap>,
+                <&to 1>;
         };
-        
+
         macro_lang_ralt: macro_lang_ralt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings
-                = <&macro_tap &to 0>
-                , <&macro_press &kp RALT>
-                , <&macro_pause_for_release>
-                , <&macro_release &kp RALT>
-                , <&macro_tap &to 1>
-                ;
+            bindings =
+                <&macro_tap>,
+                <&to 0>,
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&to 1>;
         };
-        
+
         macro_lang_rgui: macro_lang_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings
-                = <&macro_tap &to 0>
-                , <&macro_press &kp RGUI>
-                , <&macro_pause_for_release>
-                , <&macro_release &kp RGUI>
-                , <&macro_tap &to 1>
-                ;
+            bindings =
+                <&macro_tap>,
+                <&to 0>,
+                <&macro_press>,
+                <&kp RGUI>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp RGUI>,
+                <&macro_tap>,
+                <&to 1>;
         };
-        
-        
+
         /*
          * Hold-taps for Thai HRM keys that must temporarily switch
          * to English/Colemak while the modifier is held.
@@ -196,7 +213,7 @@
          * The first cell is kept for readability/compatibility with the
          * normal HRM style, but the dedicated macro itself does not need it.
          */
-        
+
         ht_lang_lgui: ht_lang_lgui {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -205,10 +222,11 @@
             quick-tap-ms = <125>;
             require-prior-idle-ms = <125>;
             bindings = <&macro_lang_lgui>, <&kp>;
+
             hold-trigger-key-positions = <KEYS_R THUMBS>;
             hold-trigger-on-release;
         };
-        
+
         ht_lang_lalt: ht_lang_lalt {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -217,10 +235,11 @@
             quick-tap-ms = <125>;
             require-prior-idle-ms = <125>;
             bindings = <&macro_lang_lalt>, <&kp>;
+
             hold-trigger-key-positions = <KEYS_R THUMBS>;
             hold-trigger-on-release;
         };
-        
+
         ht_lang_lctrl: ht_lang_lctrl {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -229,10 +248,11 @@
             quick-tap-ms = <125>;
             require-prior-idle-ms = <125>;
             bindings = <&macro_lang_lctrl>, <&kp>;
+
             hold-trigger-key-positions = <KEYS_R THUMBS>;
             hold-trigger-on-release;
         };
-        
+
         ht_lang_rctrl: ht_lang_rctrl {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -241,10 +261,11 @@
             quick-tap-ms = <125>;
             require-prior-idle-ms = <125>;
             bindings = <&macro_lang_rctrl>, <&kp>;
+
             hold-trigger-key-positions = <KEYS_L THUMBS>;
             hold-trigger-on-release;
         };
-        
+
         ht_lang_ralt: ht_lang_ralt {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -253,10 +274,11 @@
             quick-tap-ms = <125>;
             require-prior-idle-ms = <125>;
             bindings = <&macro_lang_ralt>, <&kp>;
+
             hold-trigger-key-positions = <KEYS_L THUMBS>;
             hold-trigger-on-release;
         };
-        
+
         ht_lang_rgui: ht_lang_rgui {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -265,11 +287,11 @@
             quick-tap-ms = <125>;
             require-prior-idle-ms = <125>;
             bindings = <&macro_lang_rgui>, <&kp>;
+
             hold-trigger-key-positions = <KEYS_L THUMBS>;
             hold-trigger-on-release;
         };
-        
-        
+
         /*
          * Language-switching layer macros.
          *
@@ -285,55 +307,73 @@
          *
          * So this safer version defines explicit layer-8 and layer-7 macros.
          */
-        
+
         macro_lang_layer_8: macro_lang_layer_8 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings
-                = <&macro_press &kp LALT>
-                , <&macro_tap_time 30>
-                , <&macro_tap &kp LSHIFT>
-                , <&macro_release &kp LALT>
-                , <&macro_tap_time 3>
-                , <&macro_tap &to 0>
-                , <&macro_press &mo 8>
-                , <&macro_pause_for_release>
-                , <&macro_release &mo 8>
-                , <&macro_tap &to 1>
-                , <&macro_wait_time 10>
-                , <&macro_press &kp LALT>
-                , <&macro_tap_time 30>
-                , <&macro_tap &kp LSHIFT>
-                , <&macro_release &kp LALT>
-                ;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap_time 30>,
+                <&macro_tap>,
+                <&kp LSHIFT>,
+                <&macro_release>,
+                <&kp LALT>,
+                <&macro_tap_time 3>,
+                <&macro_tap>,
+                <&to 0>,
+                <&macro_press>,
+                <&mo 8>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&mo 8>,
+                <&macro_tap>,
+                <&to 1>,
+                <&macro_wait_time 10>,
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap_time 30>,
+                <&macro_tap>,
+                <&kp LSHIFT>,
+                <&macro_release>,
+                <&kp LALT>;
         };
-        
+
         macro_lang_layer_7: macro_lang_layer_7 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings
-                = <&macro_press &kp LALT>
-                , <&macro_tap_time 30>
-                , <&macro_tap &kp LSHIFT>
-                , <&macro_release &kp LALT>
-                , <&macro_tap_time 3>
-                , <&macro_tap &to 0>
-                , <&macro_press &mo 7>
-                , <&macro_pause_for_release>
-                , <&macro_release &mo 7>
-                , <&macro_tap &to 1>
-                , <&macro_wait_time 10>
-                , <&macro_press &kp LALT>
-                , <&macro_tap_time 30>
-                , <&macro_tap &kp LSHIFT>
-                , <&macro_release &kp LALT>
-                ;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap_time 30>,
+                <&macro_tap>,
+                <&kp LSHIFT>,
+                <&macro_release>,
+                <&kp LALT>,
+                <&macro_tap_time 3>,
+                <&macro_tap>,
+                <&to 0>,
+                <&macro_press>,
+                <&mo 7>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&mo 7>,
+                <&macro_tap>,
+                <&to 1>,
+                <&macro_wait_time 10>,
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap_time 30>,
+                <&macro_tap>,
+                <&kp LSHIFT>,
+                <&macro_release>,
+                <&kp LALT>;
         };
-        
+
         lt_lang_8: lt_lang_8 {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -342,7 +382,7 @@
             quick-tap-ms = <0>;
             bindings = <&macro_lang_layer_8>, <&kp>;
         };
-        
+
         lt_lang_7: lt_lang_7 {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -351,7 +391,9 @@
             quick-tap-ms = <0>;
             bindings = <&macro_lang_layer_7>, <&kp>;
         };
+
         // Left-hand hold-tap: activates a KhonChai sub-layer on hold
+
         hml_khc: hml_khc {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -360,11 +402,13 @@
             quick-tap-ms = <125>;
             require-prior-idle-ms = <125>;
             bindings = <&mo>, <&kp>;
+
             hold-trigger-key-positions = <KEYS_R THUMBS>;
             hold-trigger-on-release;
         };
-        
+
         // Right-hand hold-tap: activates a KhonChai sub-layer on hold
+
         hmr_khc: hmr_khc {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -373,41 +417,47 @@
             quick-tap-ms = <125>;
             require-prior-idle-ms = <125>;
             bindings = <&mo>, <&kp>;
+
             hold-trigger-key-positions = <KEYS_L THUMBS>;
             hold-trigger-on-release;
         };
 
-        
         /*
          * Explicit mode-switch macros.
          */
-        
+
         macro_to_eng: macro_to_eng {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <50>;
-            bindings
-                = <&macro_press &kp LALT>
-                , <&macro_tap &kp LSHIFT>
-                , <&macro_release &kp LALT>
-                , <&macro_wait_time 3>
-                , <&macro_tap &to 0>
-                ;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp LSHIFT>,
+                <&macro_release>,
+                <&kp LALT>,
+                <&macro_wait_time 3>,
+                <&macro_tap>,
+                <&to 0>;
         };
-        
+
         macro_to_thai: macro_to_thai {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <50>;
-            bindings
-                = <&macro_press &kp LALT>
-                , <&macro_tap &kp LSHIFT>
-                , <&macro_release &kp LALT>
-                , <&macro_wait_time 3>
-                , <&macro_tap &to 1>
-                ;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp LSHIFT>,
+                <&macro_release>,
+                <&kp LALT>,
+                <&macro_wait_time 3>,
+                <&macro_tap>,
+                <&to 1>;
         };
 
         td0: td0 {
@@ -434,62 +484,70 @@
 
     combos { compatible = "zmk,combos"; };
 
+    macros {
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         // layer 0
+
         colemak_dh_mod {
             display-name = "Colemak DH Mod Miryoku";
             bindings = <
-&none       &kp Q            &kp W            &kp F         &kp P              &kp B                      &none         &kp J        &kp L               &kp U         &kp Y                  &kp SQT               &none
-&caps_word  &hml LGUI     A  &hml LALT     R  &hml LCTRL S  &hml LSHIFT     T  &kp G               &none  &none  &none  &kp M        &hmr RSHIFT      N  &hmr RCTRL E  &hmr LALT I            &hmr RGUI      O      &macro_to_thai
-&none       &kp Z            &kp X            &kp C         &hml RALT D        &kp V      &none           &none         &kp K        &hmr RALT H         &kp COMMA     &kp PERIOD  &kp SLASH  &none
-                                              &lt 6 ESCAPE  &lt 4 SPACE        &lt 5 TAB                                &lt 8 ENTER  &lt 7 BACKSPACE     &lt 9 DELETE
+&none       &kp Q        &kp W        &kp F         &kp P          &kp B                      &none         &kp J        &kp L            &kp U         &kp Y        &kp SQT      &none
+&caps_word  &hml LGUI A  &hml LALT R  &hml LCTRL S  &hml LSHIFT T  &kp G               &none  &none  &none  &kp M        &hmr RSHIFT N    &hmr RCTRL E  &hmr LALT I  &hmr RGUI O  &macro_to_thai
+&none       &kp Z        &kp X        &kp C         &hml RALT D    &kp V      &none           &none         &kp K        &hmr RALT H      &kp COMMA     &kp PERIOD   &kp SLASH    &none
+                                      &lt 6 ESCAPE  &lt 4 SPACE    &lt 5 TAB                                &lt 8 ENTER  &lt 7 BACKSPACE  &lt 9 DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
 
         // layer 1
+
         khc_norm {
             display-name = "KhonChai Norm";
             bindings = <
-&none      &kp PERIOD           &kp N9            &kp S              &kp RBKT      &kp L                      &none         &kp X    &kp Y          &kp D                &kp B             &kp LBKT              &none
-&caps_word &ht_lang_lgui LGUI SQT  &ht_lang_lalt LALT G  &ht_lang_lctrl LCTRL I  &hml_khc 2 O  &kp COMMA           &none  &none  &none  &kp V    &hmr_khc 2 K  &ht_lang_rctrl RCTRL J  &ht_lang_ralt LALT H  &ht_lang_rgui RGUI SEMI  &macro_to_eng
-&none      &kp N6               &kp W             &kp M              &hml_khc 3 P &kp N0      &none           &none        &kp N8   &hmr_khc 3 U &kp F                &mt LG(LC(F3)) T  &mt LG(LC(F4)) LS(N6) &none
-                                              &lt 6 ESCAPE  &lt 4 SPACE        &lt 5 TAB                                &lt_lang_8 8 ENTER  &lt_lang_7 7 BACKSPACE  &lt 9 DELETE
+&none       &kp PERIOD              &kp N9                &kp S                   &kp RBKT      &kp L                      &none         &kp X               &kp Y                   &kp D                   &kp B                 &kp LBKT                 &none
+&caps_word  &ht_lang_lgui LGUI SQT  &ht_lang_lalt LALT G  &ht_lang_lctrl LCTRL I  &hml_khc 2 O  &kp COMMA           &none  &none  &none  &kp V               &hmr_khc 2 K            &ht_lang_rctrl RCTRL J  &ht_lang_ralt LALT H  &ht_lang_rgui RGUI SEMI  &macro_to_eng
+&none       &kp N6                  &kp W                 &kp M                   &hml_khc 3 P  &kp N0     &none           &none         &kp N8              &hmr_khc 3 U            &kp F                   &mt LG(LC(F3)) T      &mt LG(LC(F4)) LS(N6)    &none
+                                                          &lt 6 ESCAPE            &lt 4 SPACE   &lt 5 TAB                                &lt_lang_8 8 ENTER  &lt_lang_7 7 BACKSPACE  &lt 9 DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
 
         // layer 2
+
         khc_sft {
             display-name = "KhonChai Shift";
             bindings = <
-&none       &kp LS(COMMA)    &kp LS(D)        &kp LS(SEMI)  &kp LS(P)          &kp A                      &none         &kp LS(C)    &kp N               &kp LS(T)     &kp LS(LBKT)           &kp LS(E)             &none
-&caps_word  &kp LS(K)        &kp N5           &kp C         &kp EQUAL          &kp R               &none  &none  &none  &kp Z        &kp E               &kp MINUS     &kp LS(F)              &kp N4                &none
-&none       &kp LS(A)        &kp SLASH        &kp Q         &kp LS(I)          &kp LS(U)  &none           &none         &kp LS(J)    &kp LS(N)           &kp LS(L)     &kp LS(V)              &kp LS(H)             &none
-                                              &kp ESCAPE  &kp SPACE            &kp TAB                                  &kp ENTER    &kp BACKSPACE       &kp DELETE
+&none       &kp LS(COMMA)  &kp LS(D)  &kp LS(SEMI)  &kp LS(P)  &kp A                      &none         &kp LS(C)  &kp N          &kp LS(T)   &kp LS(LBKT)  &kp LS(E)  &none
+&caps_word  &kp LS(K)      &kp N5     &kp C         &kp EQUAL  &kp R               &none  &none  &none  &kp Z      &kp E          &kp MINUS   &kp LS(F)     &kp N4     &none
+&none       &kp LS(A)      &kp SLASH  &kp Q         &kp LS(I)  &kp LS(U)  &none           &none         &kp LS(J)  &kp LS(N)      &kp LS(L)   &kp LS(V)     &kp LS(H)  &none
+                                      &kp ESCAPE    &kp SPACE  &kp TAB                                  &kp ENTER  &kp BACKSPACE  &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
 
         // layer 3
+
         khc_ralt {
             display-name = "KhonChai Right Alt";
             bindings = <
-&none       &none            &kp LS(SLASH)    &none         &kp LS(S)          &none                      &none         &none        &kp N7              &kp LS(B)     &none                  &kp LS(W)               &none
-&caps_word  &none            &kp LS(G)        &kp LS(DOT)   &kp LS(O)          &none              &none  &none  &none   &none        &none               &kp LS(N7)    &kp BACKSLASH          &none                 &none
-&none       &none            &kp LS(Y)        &kp LS(R)     &kp N1             &none      &none           &none         &none        &kp LS(BACKSLASH)   &kp LS(RBKT)     &kp LS(SQT)         &kp N2             &none
-                                              &kp ESCAPE    &kp SPACE          &kp TAB                                &kp ENTER  &kp BACKSPACE     &kp DELETE
+&none       &none  &kp LS(SLASH)  &none        &kp LS(S)  &none                    &none         &none      &kp N7             &kp LS(B)     &none          &kp LS(W)  &none
+&caps_word  &none  &kp LS(G)      &kp LS(DOT)  &kp LS(O)  &none             &none  &none  &none  &none      &none              &kp LS(N7)    &kp BACKSLASH  &none      &none
+&none       &none  &kp LS(Y)      &kp LS(R)    &kp N1     &none    &none           &none         &none      &kp LS(BACKSLASH)  &kp LS(RBKT)  &kp LS(SQT)    &kp N2     &none
+                                  &kp ESCAPE   &kp SPACE  &kp TAB                                &kp ENTER  &kp BACKSPACE      &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
 
         // layer 4
+
         arrow {
             display-name = "Arrow";
             bindings = <
@@ -504,6 +562,7 @@
         };
 
         // layer 5
+
         mouse {
             bindings = <
 &none  &none     &none     &none      &none      &none                   &none         &none           &none           &none         &none            &none  &none
@@ -516,53 +575,56 @@
         };
 
         // layer 6
+
         peripheral {
             bindings = <
-&none  &none     &none         &none      &none      &none                  &none         &ext_power EP_OFF  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &ext_power EP_ON    &rgb_ug RGB_BRD  &rgb_ug RGB_BRI
-&none  &kp LGUI  &kp LALT      &kp LCTRL  &kp LSHFT  &none           &none  &none  &none  &kp C_PREVIOUS     &kp C_VOL_DN     &kp C_VOL_UP    &kp C_NEXT          &rgb_ug RGB_HUD  &rgb_ug RGB_HUI
-&none  &none     &none         &none      &none      &none  &none           &none         &kp C_REWIND       &kp C_BRI_DN     &kp C_BRI_UP    &kp C_FAST_FORWARD  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI
-                               &trans     &none      &none                                &kp C_PLAY         &kp C_PAUSE      &kp C_MUTE
+&none  &none     &none     &none      &none      &none                  &none         &ext_power EP_OFF  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &ext_power EP_ON    &rgb_ug RGB_BRD  &rgb_ug RGB_BRI
+&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none           &none  &none  &none  &kp C_PREVIOUS     &kp C_VOL_DN     &kp C_VOL_UP    &kp C_NEXT          &rgb_ug RGB_HUD  &rgb_ug RGB_HUI
+&none  &none     &none     &none      &none      &none  &none           &none         &kp C_REWIND       &kp C_BRI_DN     &kp C_BRI_UP    &kp C_FAST_FORWARD  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI
+                           &trans     &none      &none                                &kp C_PLAY         &kp C_PAUSE      &kp C_MUTE
             >;
 
             label = "peripheral";
         };
 
         // layer 7
+
         number {
             display-name = "NUMBER";
             bindings = <
-&none                &kp LBKT          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp RBKT                           &none         &none  &none           &none      &none         &none         &none
-&kp C_AL_CALCULATOR  &kp SEMI          &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp EQUAL                   &none  &none  &none  &none  &kp LSHIFT      &kp LCTRL  &kp LALT      &kp LGUI      &none
-&none                &kp GRAVE         &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp BACKSLASH      &none           &none         &none  &kp RALT        &none      &none         &none         &none
-                                                        &kp KP_DOT       &kp KP_NUMBER_0  &kp KP_SUBTRACT                                  &none  &trans          &none
+&none                &kp LBKT   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp RBKT                       &none         &none  &none       &none      &none     &none     &none
+&kp C_AL_CALCULATOR  &kp SEMI   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp EQUAL               &none  &none  &none  &none  &kp LSHIFT  &kp LCTRL  &kp LALT  &kp LGUI  &none
+&none                &kp GRAVE  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp BACKSLASH  &none           &none         &none  &kp RALT    &none      &none     &none     &none
+                                                 &kp DOT          &kp KP_NUMBER_0  &kp MINUS                                    &none  &trans      &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
         };
 
         // layer 8
+
         symbol {
             bindings = <
-&none  &kp LBRC        &kp AMPERSAND    &kp KP_ASTERISK       &none                  &kp RBRC                         &none         &none   &kp RBRC           &kp LBRC          &none         &none         &none
-&none  &kp COLON       &kp DOLLAR       &kp PERCENT           &kp CARET              &kp KP_PLUS               &none  &none  &none  &none   &kp LSHIFT         &kp LCTRL         &kp LALT      &kp LGUI      &none
-&none  &kp TILDE       &kp EXCLAMATION  &kp AT                &kp HASH               &kp PIPE         &none           &none         &none   &kp RBKT           &kp LBKT          &none         &none         &none
-                                        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDER                                      &trans  &none              &none
+&none  &kp LBRC   &kp AMPERSAND    &kp KP_ASTERISK       &none                  &kp RBRC                     &none         &none   &kp RBRC    &kp LBRC   &none     &none     &none
+&none  &kp COLON  &kp DOLLAR       &kp PERCENT           &kp CARET              &kp KP_PLUS           &none  &none  &none  &none   &kp LSHIFT  &kp LCTRL  &kp LALT  &kp LGUI  &none
+&none  &kp TILDE  &kp EXCLAMATION  &kp AT                &kp HASH               &kp PIPE     &none           &none         &none   &kp RBKT    &kp LBKT   &none     &none     &none
+                                   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDER                                  &trans  &none       &none
             >;
 
             label = "symbol";
         };
 
         // layer 9
+
         func {
             bindings = <
-&none  &kp F12  &kp F7  &kp F8      &kp F9     &none                           &none         &none  &none           &none      &none         &none         &none
-&none  &kp F11  &kp F4  &kp F5      &kp F6     &bt BT_CLR_ALL           &none  &none  &none  &none  &kp LSHIFT      &kp LCTRL  &kp LALT      &kp LGUI      &none
-&none  &kp F10  &kp F1  &kp F2      &kp F3     &none           &none           &none         &none  &none           &none      &none         &none         &none
-                        &kp ESCAPE  &kp SPACE  &kp TAB                                       &none  &none           &trans
+&none  &kp F12  &kp F7  &kp F8      &kp F9     &none                           &none         &none  &none       &none      &none     &none     &none
+&none  &kp F11  &kp F4  &kp F5      &kp F6     &bt BT_CLR_ALL           &none  &none  &none  &none  &kp LSHIFT  &kp LCTRL  &kp LALT  &kp LGUI  &none
+&none  &kp F10  &kp F1  &kp F2      &kp F3     &none           &none           &none         &none  &none       &none      &none     &none     &none
+                        &kp ESCAPE  &kp SPACE  &kp TAB                                       &none  &none       &trans
             >;
 
             label = "func";
         };
     };
 };
-
