@@ -578,10 +578,10 @@
 
         peripheral {
             bindings = <
-&none  &none     &none     &none      &none      &none                  &none         &ext_power EP_OFF  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &ext_power EP_ON    &rgb_ug RGB_BRD  &rgb_ug RGB_BRI
-&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none           &none  &none  &none  &kp C_PREVIOUS     &kp C_VOL_DN     &kp C_VOL_UP    &kp C_NEXT          &rgb_ug RGB_HUD  &rgb_ug RGB_HUI
-&none  &none     &none     &none      &none      &none  &none           &none         &kp C_REWIND       &kp C_BRI_DN     &kp C_BRI_UP    &kp C_FAST_FORWARD  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI
-                           &trans     &none      &none                                &kp C_PLAY         &kp C_PAUSE      &kp C_MUTE
+&none  &none     &none     &none      &none      &none                  &none         &ext_power EP_OFF  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2        &none  &none
+&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none           &none  &none  &none  &kp C_PREVIOUS     &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT          &none  &bt BT_CLR
+&none  &none     &none     &none      &none      &none  &none           &none         &kp C_REWIND       &kp C_BRI_DN  &kp C_BRI_UP  &kp C_FAST_FORWARD  &none  &none
+                           &trans     &none      &none                                &kp C_PLAY         &kp C_PAUSE   &kp C_MUTE
             >;
 
             label = "peripheral";
