@@ -75,7 +75,7 @@ layers:
   - V
   - {t: K, h: KhonChai Shift}
   - {t: J, h: '&macro_lang_rctrl RCTRL'}
-  - {t: H, h: '&macro_lang_ralt LALT'}
+  - {t: H, h: '&macro_lang_ralt RALT'}
   - {t: ;, h: '&macro_lang_rgui RGUI', s: ':'}
   - '&macro_to_eng'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -89,8 +89,8 @@ layers:
   - {t: '8', s: '*'}
   - {t: U, h: KhonChai Right Alt}
   - F
-  - {t: T, h: Gui+Ctl+F3}
-  - {t: Sft+6, h: Gui+Ctl+F4, s: Sft+^}
+  - T
+  - {t: Sft+6, s: Sft+^}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:keyboard-esc$$', h: peripheral}
   - {t: '$$mdi:keyboard-space$$', h: arrow}
