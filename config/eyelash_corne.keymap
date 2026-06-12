@@ -1,12 +1,9 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 4500
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 220
-
 #define HRM_TAP_TERM_MS 270
 #define HRM_QUICK_TAP_MS 125
 #define HRM_REQUIRE_PRIOR_IDLE_MS 125
-
 #define LAYER_TAP_TERM_MS 140
-
 #define LANG_CHG_MOD_TAP_TERM 30
 
 #include <input/processors.dtsi>
@@ -504,7 +501,7 @@
             display-name = "Colemak DH Mod Miryoku";
             bindings = <
 &none       &kp Q        &kp W        &kp F         &kp P          &kp B                      &none         &kp J        &kp L            &kp U         &kp Y        &kp SQT      &none
-&caps_word  &hml LGUI A  &hml LALT R  &hml LCTRL S  &hml LSHIFT T  &kp G               &none  &none  &none  &kp M        &hmr RSHIFT N    &hmr RCTRL E  &hmr LALT I  &hmr RGUI O  &macro_to_thai
+&caps_word  &hml LGUI A  &hml LALT R  &hml LCTRL S  &hml LSHIFT T  &kp G               &none  &none  &none  &kp M        &hmr RSHIFT N    &hmr RCTRL E  &hmr RALT I  &hmr RGUI O  &macro_to_thai
 &none       &kp Z        &kp X        &kp C         &hml RALT D    &kp V      &none           &none         &kp K        &hmr RALT H      &kp COMMA     &kp PERIOD   &kp SLASH    &none
                                       &lt 6 ESCAPE  &lt 4 SPACE    &lt 5 TAB                                &lt 8 ENTER  &lt 7 BACKSPACE  &lt 9 DELETE
             >;
@@ -517,10 +514,10 @@
         khc_norm {
             display-name = "KhonChai Norm";
             bindings = <
-&none      &kp PERIOD             &kp N9               &kp S                  &kp RBKT     &kp L                      &none        &kp X               &kp Y                   &kp D                  &kp B                &kp LBKT                &none
-&caps_word &ht_lang_lgui LGUI SQT &ht_lang_lalt LALT G &ht_lang_lctrl LCTRL I &hml_khc 2 O &kp COMMA          &none  &none  &none  &kp V               &hmr_khc 2 K            &ht_lang_rctrl RCTRL J &ht_lang_ralt RALT H &ht_lang_rgui RGUI SEMI &macro_to_eng
-&none      &kp N6                 &kp W                &kp M                  &hml_khc 3 P &kp N0      &none          &none        &kp N8              &hmr_khc 3 U            &kp F                  &kp T                &kp LS(N6)              &none
-                                                       &lt 6 ESCAPE           &lt 4 SPACE  &lt 5 TAB                               &lt_lang_8 8 ENTER  &lt_lang_7 7 BACKSPACE  &lt 9 DELETE
+&none       &kp PERIOD              &kp N9                &kp S                   &kp RBKT      &kp L                      &none         &kp X               &kp Y                   &kp D                   &kp B                 &kp LBKT                 &none
+&caps_word  &ht_lang_lgui LGUI SQT  &ht_lang_lalt LALT G  &ht_lang_lctrl LCTRL I  &hml_khc 2 O  &kp COMMA           &none  &none  &none  &kp V               &hmr_khc 2 K            &ht_lang_rctrl RCTRL J  &ht_lang_ralt RALT H  &ht_lang_rgui RGUI SEMI  &macro_to_eng
+&none       &kp N6                  &kp W                 &kp M                   &hml_khc 3 P  &kp N0     &none           &none         &kp N8              &hmr_khc 3 U            &kp F                   &kp T                 &kp LS(N6)               &none
+                                                          &lt 6 ESCAPE            &lt 4 SPACE   &lt 5 TAB                                &lt_lang_8 8 ENTER  &lt_lang_7 7 BACKSPACE  &lt 9 DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
