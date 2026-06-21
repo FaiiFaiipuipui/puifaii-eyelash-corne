@@ -42,7 +42,7 @@ layers:
   - {t: ',', s: <}
   - .
   - {t: /, s: '?'}
-  - Alt+$$mdi:apple-keyboard-shift$$
+  - Sft+$$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-esc$$', h: peripheral}
   - {t: '$$mdi:keyboard-space$$', h: arrow}
   - {t: '$$mdi:keyboard-tab$$', h: mouse}
