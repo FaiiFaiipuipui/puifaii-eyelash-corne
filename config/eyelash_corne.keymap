@@ -516,7 +516,7 @@
             bindings = <
 &none       &kp PERIOD              &kp N9                &kp S                   &kp RBKT      &kp L                      &none         &kp X               &kp Y                   &kp D                   &kp B                 &kp LBKT                 &none
 &caps_word  &ht_lang_lgui LGUI SQT  &ht_lang_lalt LALT G  &ht_lang_lctrl LCTRL I  &hml_khc 2 O  &kp COMMA           &none  &none  &none  &kp V               &hmr_khc 2 K            &ht_lang_rctrl RCTRL J  &ht_lang_ralt RALT H  &ht_lang_rgui RGUI SEMI  &macro_to_eng
-&none       &kp N6                  &kp W                 &kp M                   &hml_khc 3 P  &kp N0     &none           &none         &kp N8              &hmr_khc 3 U            &kp F                   &kp T                 &kp LS(N6)               &none
+&none       &kp N6                  &kp W                 &kp M                   &hml_khc 3 P  &kp N0     &none           &none         &kp N8              &hmr_khc 3 U            &kp F                   &kp T                 &kp LS(N6)               &kp LS(LEFT_ALT)
                                                           &lt 6 ESCAPE            &lt 4 SPACE   &lt 5 TAB                                &lt_lang_8 8 ENTER  &lt_lang_7 7 BACKSPACE  &lt 9 DELETE
             >;
 
