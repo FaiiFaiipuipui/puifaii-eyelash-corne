@@ -91,7 +91,7 @@ layers:
   - F
   - T
   - {t: Sft+6, s: Sft+^}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Sft+$$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-esc$$', h: peripheral}
   - {t: '$$mdi:keyboard-space$$', h: arrow}
   - {t: '$$mdi:keyboard-tab$$', h: mouse}
