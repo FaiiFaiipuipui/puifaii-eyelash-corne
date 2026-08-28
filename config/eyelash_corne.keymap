@@ -136,8 +136,8 @@
                            &none      &trans      &none                                &kp ENTER       &kp BACKSPACE    &kp DELETE
             >;
 
-            sensor-bindings = <&scroll_encoder>;
             label = "arrow";
+            sensor-bindings = <&rsr_vol &rsr_trans>;
         };
 
         mouse {
@@ -149,6 +149,7 @@
             >;
 
             label = "mouse";
+            sensor-bindings = <&rsr_vol &rsr_trans>;
         };
 
         peripheral {
@@ -160,6 +161,7 @@
             >;
 
             label = "peripheral";
+            sensor-bindings = <&rsr_vol &rsr_trans>;
         };
 
         number {
@@ -183,6 +185,7 @@
             >;
 
             label = "symbol";
+            sensor-bindings = <&rsr_vol &rsr_trans>;
         };
 
         func {
@@ -194,6 +197,7 @@
             >;
 
             label = "func";
+            sensor-bindings = <&rsr_vol &rsr_trans>;
         };
     };
 };
